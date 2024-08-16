@@ -11,6 +11,10 @@
 html{
     font-size: 62.5%;  /* 1rem = 10px */
 }
+
+.text-center{
+    text-align: center;
+}
 .main{
     background: url(assets/images/background.jpg);
     background-size: cover;
@@ -20,6 +24,9 @@ html{
     width: 100vw;
 
     & nav{
+        
+        position: relative;
+        z-index: 7;
         padding-top: 0.9%;
         width: 62%;
         height: auto;
@@ -27,6 +34,7 @@ html{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        
 
         & .logo{
             width: 40%;
@@ -37,14 +45,14 @@ html{
         }
     }
 
-    .btns-nav{
+    & .btns-nav{
         & .btn-english{
             margin-right: 1rem;
             color: white;
             border: none;
             border: 1px solid white;
             background-color: gray;
-            padding: 0.7rem 3.5rem;
+            padding: 0.6rem 3.7rem;
             background-color: rgb(23, 19, 17);
             font-size: 1.4rem;
             font-weight: 400;
@@ -56,15 +64,22 @@ html{
         }
     
          & .btn-signin{
-            font-size: 1.4rem;
-            font-weight: 400;
-            padding: 0.7rem 1.4rem;
+            font-size: 1.3rem;
+            font-weight: 500;
+            padding: 0.7rem 1.6rem;
             border: none;
             cursor: pointer;
         }
     }
+}
 
-
+& .box{
+    width: 100vw;
+    height: 74vh;
+    position: absolute;
+    top: 0;
+    background-color: black;
+    opacity: 0.7;
 }
 
 .btn{
@@ -76,4 +91,70 @@ html{
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
+}
+
+.hero{
+    width: 100vw;
+    height: 74vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    z-index: 3;
+
+    & > :first-child{
+        font-size: 4.6rem;
+        font-weight: 800;
+    }
+    & > :nth-child(2){
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
+        font-size: 2.3rem;
+        font-weight: 300;
+    }
+    & > :nth-child(3){
+        padding-bottom: 1rem;
+        font-size: 1.9rem;
+        font-weight: 300;
+    }
+}
+
+.main-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .btn-getstarted{
+        font-size: 2.3rem;
+        font-weight: 500;
+        padding: 1.2rem 2.5rem;
+    
+        & img{
+            margin-bottom: -0.2rem;
+        }
+    }
+
+    & input{
+        width: 40rem;
+        height: 5.5rem;
+        font-size: 1.4rem;
+        font-weight: 300;
+        padding: 0.22rem 1rem;
+        color: rgba(255, 255, 255, 0.849);
+        background-color: rgb(31, 28, 24);
+        border: 0.09rem solid rgba(161, 158, 158,0.6);
+        margin-right: 0.4rem;
+        letter-spacing: 0.04rem;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+
+    & ::placeholder{
+        color: rgba(255, 255, 255, 0.849);
+    }
 }
