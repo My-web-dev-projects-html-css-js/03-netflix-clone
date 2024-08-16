@@ -12,6 +12,9 @@ html{
     font-size: 62.5%;  /* 1rem = 10px */
 }
 
+body{
+    background-color: black;
+}
 .text-center{
     text-align: center;
 }
@@ -27,7 +30,7 @@ html{
         
         position: relative;
         z-index: 7;
-        padding-top: 0.9%;
+        padding-top: 1%;
         width: 62%;
         height: auto;
         margin: 0 auto;
@@ -95,7 +98,7 @@ html{
 
 .hero{
     width: 100vw;
-    height: 74vh;
+    height: 67vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,7 +112,7 @@ html{
         font-weight: 800;
     }
     & > :nth-child(2){
-        padding-top: 1.5rem;
+        padding-top: 1.3rem;
         padding-bottom: 2rem;
         font-size: 2.3rem;
         font-weight: 300;
@@ -130,6 +133,7 @@ html{
         font-size: 2.3rem;
         font-weight: 500;
         padding: 1rem 2.5rem;
+        cursor: pointer;
     
         & img{
             margin-bottom: -0.2rem;
@@ -158,6 +162,28 @@ html{
         color: rgba(255, 255, 255, 0.849);
     }
 }
+
+.serparation{
+    width: 100vw;
+    height: 0.9rem;
+    background-color: rgb(40, 39, 39);
+    /* position: relative;
+    z-index: 9; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Query media(to make responsive) */
 
 
 @media screen and (max-width:1280px) {
