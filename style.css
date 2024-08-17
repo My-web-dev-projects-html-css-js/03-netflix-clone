@@ -176,11 +176,11 @@ body{
 
 
 /* section first */
-.first{
+.odd{
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 60%;
+    width: 60%;
     margin:6rem auto;
     gap: 1rem;
     
@@ -206,12 +206,12 @@ body{
     }
 
     & .video{
-        width: 50%;
+        width: 49%;
         position: relative;
 
         & video{
             position: absolute;
-            top: 18%;
+            top: 20.1%;
             left: 13%;
             width: 73%;
             height: 55%;
@@ -221,6 +221,10 @@ body{
         }
     }
 
+}
+
+.first{
+    
 }
 
 
@@ -247,13 +251,18 @@ body{
     }
     .hero{
         height: 24vh;
+        width: 75vw;
     }
 
     .main-input{
-           & .btn-getstarted{
-                white-space: nowrap;
-            }
+        & .btn-getstarted{
+            white-space: nowrap;
         }
+    }
+
+    .first{
+        width: 94vw;
+    }
 
 }
 
@@ -317,7 +326,34 @@ body{
                 padding: 1.1rem 1.5rem;
                 white-space: nowrap;
             }
+    }
+
+    .first{
+        flex-direction: column;
+        width: 85vw;
+
+        & .text{
+            width: 100%;
+            text-align: center;
+
+               
+            & :first-child{
+                font-size: 3.2rem;
+                font-family: "Martel Sans", sans-serif;
+                font-weight: 900;
+            }
+            & :last-child{
+                font-size: 1.8rem;
+                font-weight: 400;
+            }
         }
+        
+        & .video{
+
+            width: 85vw;
+
+        }
+    }
 }
 
 @media screen and (min-width:307px) and (max-width:600px) {
@@ -381,7 +417,29 @@ body{
     .serparation{
         top: 16%;
     }
+    .first{
+        flex-direction: column;
+        width: 85vw;
+        margin-top: 12rem;
 
+        & .text{
+            width: 100%;
+            text-align: center;
+    
+            & :first-child{
+                font-size: 3.2rem;
+            }
+            & :last-child{
+                font-size: 1.7rem;
+            }
+        }
+        
+        & .video{
+
+            width: 85vw;
+
+        }
+    }
     
 }
 
@@ -456,6 +514,33 @@ body{
 
     .serparation{
         top: 2.4%;
+    }
+
+    .first{
+        flex-direction: column;
+        width: 85vw;
+
+        & .text{
+            width: 100%;
+            text-align: center;
+
+               
+            & :first-child{
+                font-size: 3.2rem;
+                font-family: "Martel Sans", sans-serif;
+                font-weight: 900;
+            }
+            & :last-child{
+                font-size: 1.8rem;
+                font-weight: 400;
+            }
+        }
+        
+        & .video{
+
+            width: 85vw;
+
+        }
     }
 }
 
