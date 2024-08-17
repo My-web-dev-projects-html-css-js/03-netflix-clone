@@ -342,6 +342,73 @@ body{
 }
 
 
+/* faq section */
+.faq{
+    width: 99vw;
+    margin: 0 auto;
+
+    & .heading{
+        color: white;
+        font-size: 4.8rem;
+        padding-top: 6rem;
+        margin-bottom: 1rem;
+    }
+
+    & .box-faq{
+        width: 60vw;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        color: white;
+
+        & .question-box{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(46, 46, 46);
+            margin-top: 0.6rem;
+            padding: 2.3rem 3rem;
+            & .question{
+                /* padding-right: 53rem; */
+                
+                font-size: 2.3rem;
+                /* padding: 1.4rem 2rem; */
+                /* margin-top: 0.5rem; */
+            }
+
+            & :last-child{
+                color: white;
+                font-size: 3rem;
+                font-weight: 200;
+            }
+        }
+        & :hover{
+            background-color: rgb(77, 74, 74);
+            cursor: pointer;
+        }
+        
+    }
+    
+}
+
+.bottom-text h2{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem auto;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+
+}
+
+
+
+
+
+
 
 
 /* Query media(to make responsive) */
@@ -384,6 +451,14 @@ body{
 
         & .text{
             width: 60%;
+        }
+    }
+
+    .faq{
+        width: 92vw;
+
+        & .box-faq{
+            width: 92vw;
         }
     }
 
@@ -508,6 +583,31 @@ body{
             }
         }
 
+    }
+
+    .faq{
+        width: 99vw;
+    
+        & .heading{
+            font-size: 3rem;
+        }
+    
+        & .box-faq{
+            width: 92vw;
+
+            & .question-box{
+                padding: 2.3rem 2.4rem;
+
+                & .question{
+                    font-size: 1.7rem;
+                }
+    
+                & :last-child{
+                    font-size: 2rem;
+                }
+            }
+        }
+        
     }
 }
 
@@ -635,6 +735,37 @@ body{
             }
         }
 
+    }
+
+    .faq{
+        width: 99vw;
+    
+        & .heading{
+            margin-top: 5rem;
+            font-size: 3rem;
+        }
+    
+        & .box-faq{
+            width: 92vw;
+
+            & .question-box{
+                padding: 2.3rem 2.4rem;
+
+                & .question{
+                    font-size: 1.7rem;
+                }
+    
+                & :last-child{
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        & .main-input{
+            display: flex;
+            flex-direction: column;
+        }
+        
     }
     
 }
@@ -813,7 +944,35 @@ body{
             }
         }
 
-       
+        .faq{
+            width: 99vw;
+        
+            & .heading{
+                font-size: 3rem;
+            }
+        
+            & .box-faq{
+                width: 92vw;
+    
+                & .question-box{
+                    padding: 2.3rem 2.4rem;
+    
+                    & .question{
+                        font-size: 1.7rem;
+                    }
+        
+                    & :last-child{
+                        font-size: 2rem;
+                    }
+                }
+            }
+    
+            & .main-input{
+                display: flex;
+                flex-direction: column;
+            }
+            
+        }
 
 }
 
