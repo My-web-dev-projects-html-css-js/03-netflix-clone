@@ -20,19 +20,19 @@ body{
 }
 .main{
     background: url(assets/images/background.jpg);
-    background-size: cover;
+    background-size: max(1200px, 100vw);
     background-repeat: no-repeat;
     background-position: center;
-    height: 74vh;
-    width: 100vw;
+    height: 72vh;
+    width: 99vw;
+    position: relative;
 
     & nav{
-        
         position: relative;
         z-index: 7;
         padding-top: 1%;
         width: 62%;
-        height: auto;
+        height: 7rem;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -77,8 +77,8 @@ body{
 }
 
 & .box{
-    width: 100vw;
-    height: 74vh;
+    width: 99vw;
+    height: 72vh;
     position: absolute;
     top: 0;
     background-color: black;
@@ -97,8 +97,9 @@ body{
 }
 
 .hero{
-    width: 100vw;
-    height: 67vh;
+    margin: 20rem auto 18.5rem auto;
+    width: 50vw;
+    height: 24.2vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,17 +165,63 @@ body{
 }
 
 .serparation{
-    width: 100vw;
+    width: 99vw;
     height: 0.9rem;
     background-color: rgb(40, 39, 39);
-    /* position: relative;
-    z-index: 9; */
+    position: relative;
+    top: 0;
+    z-index: 3;
 }
 
 
 
+/* section first */
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 60%;
+    margin:6rem auto;
+    gap: 1rem;
+    
+    
+    & .text{
+        width: 50%;
+        color: white;
 
+        & span{
+            display: block;
+            width: 100%;
+        }
 
+        & :first-child{
+            font-size: 4.8rem;
+            font-family: "Martel Sans", sans-serif;
+            font-weight: 900;
+        }
+        & :last-child{
+            font-size: 2.2rem;
+            font-weight: 400;
+        }
+    }
+
+    & .video{
+        width: 50%;
+        position: relative;
+
+        & video{
+            position: absolute;
+            top: 18%;
+            left: 13%;
+            width: 73%;
+            height: 55%;
+        }
+        & img{
+            width: 100%;
+        }
+    }
+
+}
 
 
 
@@ -186,16 +233,34 @@ body{
 /* Query media(to make responsive) */
 
 
-@media screen and (max-width:1280px) {
+@media screen and (min-width:960px) and (max-width:1280px) {
+    .main{
+        height: 72.7vh;
+    }
+    
     .main nav{
         width: 94%;
     }
+
+    .box{
+        height: 71.8vh;
+    }
+    .hero{
+        height: 24vh;
+    }
+
+    .main-input{
+           & .btn-getstarted{
+                white-space: nowrap;
+            }
+        }
+
 }
 
-@media screen and (max-width:960px) {
+@media screen and (min-width:600px) and (max-width:960px) {
     .main {
         
-        height: 53%;
+        height: 52.7vh;
 
         & nav{
             width: 94%;
@@ -212,13 +277,15 @@ body{
     }
 
     .box{
-        height: 56.6%;
+        height: 52.7vh;
     }
 
     .hero{
         margin: 0 auto;
         width: 70vw;
-        height: 50vh;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        /* height: 20vh; */
     
         & > :first-child{
             font-size: 3rem;
@@ -253,48 +320,56 @@ body{
         }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (min-width:307px) and (max-width:600px) {
     
     .main {
         
-        height: 53%;
+        height: 50vh;
 
         & nav{
+            width: 94%;
 
             & .logo {
-                width: 10rem;
+                width: 15rem;
         
                 & img{
-                    width: 8rem;
+                    width: 9rem;
                 }
             }
 
-            & .btns-nav{
-
-                & .btn-english{
-                    padding: 0.3rem 2rem;
-                    width: rem;
-                }
-            }
         }
     }
 
     .box{
-        height: 55.4vh;
+        height: 50vh;
     }
 
     .hero{
         margin: 0 auto;
         width: 90vw;
+        /* height: 6vh; */
+        margin-top: 10rem;
 
+        & > :first-child{
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        & > :nth-child(2){
+            font-size: 1.6rem;
+        }
+        & > :nth-child(3){
+            font-size: 1.6rem;
+        }
     }
     
     .main-input{
         flex-direction: column;
         gap: 2rem;
+        /* width: 50%; */
 
         & input{
-            width: 100%;
+            width: 80vw;
             height: 5rem;
         }
 
@@ -302,18 +377,24 @@ body{
             font-size: 1.8rem;;
         }
     }
+
+    .serparation{
+        top: 16%;
+    }
+
+    
 }
 
 
 @media screen and (max-width:307px) {
     
     .main {
-        
-        height: 68vh;
+        width: 100vw;
+        height: 67vh;
 
         & nav{
-            padding-top: 2rem;
-            padding-left: 2rem;
+            padding-top: 2.3rem;
+            /* padding-left: 2rem; */
             flex-direction: column;
             align-items: start;
 
@@ -336,13 +417,19 @@ body{
     }
 
     .box{
-        height: 68vh;
+        height: 67vh;
     }
 
     .hero{
         margin: 0 auto;
         width: 74vw;
         height: 58vh;
+        padding-top: 1.4rem;
+
+        & > :first-child{
+            font-size: 2.9rem;
+            font-weight: 700;
+        }
 
         & > :nth-child(2){
             font-size: 1.6rem;
@@ -367,4 +454,14 @@ body{
             font-size: 1.8rem;;
         }
     }
+
+    .serparation{
+        top: 2.4%;
+    }
 }
+
+
+
+
+
+
