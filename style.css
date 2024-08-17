@@ -404,6 +404,50 @@ body{
 
 }
 
+.section-links{
+    width: 58vw;
+    margin: 0 auto;
+    color: white;
+    position: relative;
+    z-index: 5;
+
+    & h3{
+        margin-top: 3.4rem;
+        margin-bottom: 1.8rem;
+        font-size: 1.6rem;
+        font-weight: 450;
+        color: rgb(179, 179, 179);
+    }
+
+    & .all-links{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        align-items: center;
+        justify-content: center;
+
+        & .link a{
+            display: inline-block;
+            color: rgb(179, 179, 179);
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+            font-weight: 450;
+        }
+    }
+
+    .btn-english-bottom ~ h2{
+        color: rgb(179, 179, 179);
+        font-size: 1.4rem;
+        font-weight: 450;
+        padding-bottom: 7rem;
+    }
+
+
+}
+
+.btn-english-bottom{
+    margin-top: 1.8rem;
+    margin-bottom: 2rem;
+}
 
 
 
@@ -460,6 +504,10 @@ body{
         & .box-faq{
             width: 92vw;
         }
+    }
+
+    .section-links{
+        width: 92vw;
     }
 
 }
@@ -608,6 +656,15 @@ body{
             }
         }
         
+    }
+
+    .section-links{
+        width: 92vw;
+
+        & .all-links{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
     }
 }
 
@@ -766,6 +823,15 @@ body{
             flex-direction: column;
         }
         
+    }
+
+    .section-links{
+        width: 92vw;
+
+        & .all-links{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
     }
     
 }
@@ -972,6 +1038,15 @@ body{
                 flex-direction: column;
             }
             
+        }
+
+        .section-links{
+            width: 92vw;
+    
+            & .all-links{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            }
         }
 
 }
